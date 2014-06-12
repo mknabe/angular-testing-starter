@@ -1,0 +1,22 @@
+{
+  "name": "angular-test-seed",
+  "description": "Project to demostrate setting up Protractor, Grunt, Karma, and Angular",
+  "version": "0.0.0",
+  "dependencies": {
+    "grunt": "~0.4.2"
+  },
+  "devDependencies": {
+    "phantomjs": "~1.9",
+    "karma": "~0.10",
+    "grunt-karma": "~0.6.2",
+    "karma-jasmine": "~0.1",
+    "protractor": "^0.21.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-angular-templates": "~0.5.4",
+    "karma-ng-html2js-preprocessor": "^0.1.0",
+    "grunt-protractor-runner": "^0.2.4",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "grunt-run": "^0.2.2"
+  }
+}
