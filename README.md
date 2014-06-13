@@ -1,4 +1,4 @@
-AngularJS Test Starter
+AngularJS Testing Starter
 ====================
 
 Setup Unit tests and E2E tests for AngularJS with Karma, Protractor, and Grunt using TodoMVC as the tested app.
