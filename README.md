@@ -1,13 +1,11 @@
-angular-test-todomvc
+AngularJS Test Starter
 ====================
 
-Use to set up Karma and Protractor for testing with AngularJS
-
+Setup Unit tests and E2E tests for AngularJS with Karma, Protractor, and Grunt using TodoMVC as the tested app.
 
 Grunt Commands
 ---
-#####grunt serve
-Starts Karma, connects to the web server, and re-runs tests when changes are made
+```grunt serve``` - Starts Karma, connects to the web server, and re-runs tests when changes are made
 
 #####grunt karma:single
 Runs unit tests, jshint, and test coverage reporter once
