@@ -1,4 +1,4 @@
-/*global todomvc */
+/*global todomvc, localStorage */
 'use strict';
 
 /**
@@ -9,7 +9,6 @@ todomvc.factory('todoStorage', function () {
 
 	return {
 		get: function () {
-			debugger;
 			return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
 		},
 

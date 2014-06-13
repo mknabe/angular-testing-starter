@@ -1,0 +1,4 @@
+{
+  "globalstrict": "false",
+  "predef": ["angular"]
+}

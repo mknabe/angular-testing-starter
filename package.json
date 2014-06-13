@@ -17,6 +17,8 @@
     "karma-ng-html2js-preprocessor": "^0.1.0",
     "grunt-protractor-runner": "^0.2.4",
     "karma-phantomjs-launcher": "^0.1.4",
-    "grunt-run": "^0.2.2"
+    "grunt-run": "^0.2.2",
+    "karma-coverage": "^0.2.4",
+    "karma-jshint-preprocessor": "0.0.3"
   }
 }
