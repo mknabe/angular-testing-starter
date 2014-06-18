@@ -34,7 +34,7 @@ module.exports = function(config){
     frameworks: ['jasmine'],
 
     // browsers to test against, be sure to install the correct browser launcher plugins
-    browsers : ['Chrome', 'PhantomJS', 'Firefox'],
+    browsers : ['PhantomJS'],
 
     // map of preprocessors that is used mostly for plugins
     preprocessors: {
@@ -44,11 +44,10 @@ module.exports = function(config){
       // test coverage
       'app/js/controllers/*.js': ['jshint', 'coverage'],
       'app/js/directives/*.js': ['jshint', 'coverage'],
-      'app/js/services/*.js': ['jshint', 'coverage'],
       'app/js/app.js': ['jshint', 'coverage']
     },
 
-    reporters: ['coverage'],
+    reporters: ['progress', 'coverage'],
 
     // list of karma plugins
     plugins : [
@@ -66,8 +65,12 @@ module.exports = function(config){
       stripPrefix: 'app/'
     },
     coverageReporter: {
+      // type of file to output, use text to output to console
       type : 'text',
-      dir: 'test-results/coverage/'
+      // directory where coverage results are saved
+      dir: 'test-results/coverage/' 
+      // if type is text or text-summary, you can set the file name
+      // file: 'coverage.txt' 
     },
     junitReporter: {
       outputFile: 'test-results/junit-results.xml'

@@ -1,4 +1,6 @@
 {
+  // suppresses warnings about the use of global strict mode
   "globalstrict": "false",
+  // define globals 
   "predef": ["angular"]
 }

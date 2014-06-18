@@ -23,12 +23,12 @@ module.exports = function(grunt) {
 
 	      }
 	    },
-	    single: {
+	    e2e: {
 	    	options: {
 		    	keepAlive: false
 		    }
 	    },
-	    dev: {
+	    continuous: {
 	    	options: {
 		    	keepAlive: true
 		    }
@@ -40,8 +40,13 @@ module.exports = function(grunt) {
       	livereload: true
       },
       karma: {
-        files: ['app/js/*.js', 'test/unit/*.js'],
+        files: ['app/js/**/*.js', 'test/unit/*.js'],
         tasks: ['karma:continuous:run']
+      }
+      ,
+      protractor: {
+        files: ['app/js/**/*.js', 'test/e2e/*.js'],
+        tasks: ['protractor:continuous']
       }
   	},
 
@@ -81,9 +86,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-protractor-runner');
 	grunt.loadNpmTasks('grunt-run');
 
-	grunt.registerTask('serve', ['karma:continuous:start', 'run:mock_server', 'connect:livereload', 'watch']);
+	grunt.registerTask('serve', ['karma:continuous:start', 'run:mock_server', 'connect:livereload', 'watch:karma']);
 
-	grunt.registerTask('unit-test', ['karma:continuous:start', 'watch']);
+	grunt.registerTask('unit-test', ['karma:continuous:start', 'watch:karma']);
+	
+	grunt.registerTask('e2e-test', ['connect:test',  'protractor:continuous', 'watch:protractor']);
 
-	grunt.registerTask('test', ['karma:unit:start', 'connect:test', 'run:mock_server', 'protractor:single']);
+	grunt.registerTask('test', ['karma:unit:start', 'connect:test', 'run:mock_server', 'protractor:e2e']);
+
 };
