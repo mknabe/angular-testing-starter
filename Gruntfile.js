@@ -55,7 +55,8 @@ module.exports = function(grunt) {
 	      options: {
 	        wait: false
 	      },
-	      args: ['app/mockApi/apiserver.js']
+	      args: []
+	      // args: ['app/mockApi/apiserver.js']
 	    }
 	  },
 

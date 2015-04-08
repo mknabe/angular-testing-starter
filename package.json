@@ -20,5 +20,11 @@
     "grunt-run": "^0.2.2",
     "karma-coverage": "^0.2.4",
     "karma-jshint-preprocessor": "0.0.3"
+  },
+  "scripts": {
+    "update-webdriver": "webdriver-manager update",
+    "postinstall": "webdriver-manager update",
+    "test": "grunt test",
+    "pretest": "npm install"
   }
 }
