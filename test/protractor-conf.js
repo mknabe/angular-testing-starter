@@ -1,6 +1,6 @@
 exports.config = {
-  seleniumServerJar: '../node_modules/protractor/selenium/selenium-server-standalone-2.42.0.jar',
-  chromeDriver: '../node_modules/protractor/selenium/chromedriver',
+  // seleniumServerJar: '../node_modules/protractor/selenium/selenium-server-standalone-2.42.0.jar',
+  // chromeDriver: '../node_modules/protractor/selenium/chromedriver',
 
   // location of E2E test specs
   specs: [
