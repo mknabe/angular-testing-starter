@@ -9,7 +9,7 @@ Grunt Commands
 ---
 ```grunt serve``` - Starts Karma, connects to the web server, and re-runs tests when changes are made
 
-```grunt karma:single``` - Runs unit tests, jshint, and test coverage reporter once
+```grunt karma:unit``` - Runs unit tests, jshint, and test coverage reporter once
 
 ```grunt unit-test``` - Starts Karma and re-runs tests when changes are made
 
