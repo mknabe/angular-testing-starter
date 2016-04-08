@@ -12,7 +12,7 @@ describe('Directives ::', function() {
     }));
 
     it('should execute expression when element loses focus', function() {
-      spyOn(scope, '$apply').andCallThrough();
+      spyOn(scope, '$apply').and.callThrough();
       var el = angular.element('<input todo-blur="console.log(1);">');
       compile(el)(scope);
       el.triggerHandler('blur');
